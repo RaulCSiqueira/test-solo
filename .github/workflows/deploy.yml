@@ -13,5 +13,7 @@ jobs:
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependecies
         run: npm ci
+      - name: install programa
+        run: npm install
       - name: Test code
         run: npm run test
